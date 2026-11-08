@@ -1,0 +1,5 @@
+# Turing Smart Screen 3.5" (XuanFang V2) USB CDC ACM Serial
+# VID: 0x1A86, PID: 0x5722
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="5722", MODE="0666", GROUP="dialout"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="5722", MODE="0666", GROUP="dialout"
+

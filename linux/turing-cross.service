@@ -1,0 +1,14 @@
+[Unit]
+Description=Turing Smart Screen 3.5 Controller Service
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/turing-cross
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
+
